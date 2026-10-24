@@ -1,0 +1,92 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f7f4;
+  color: #26372d;
+}
+
+header {
+  background-color: #16804a;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 15px;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.card {
+  background: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px #00000010;
+}
+
+.card h2 {
+  color: #16804a;
+  font-size: 32px;
+}
+
+.food-section,
+.history-section {
+  background: white;
+  padding: 25px;
+  margin-top: 25px;
+  border-radius: 12px;
+}
+
+input, select {
+  width: 100%;
+  padding: 13px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+button {
+  background: #16804a;
+  color: white;
+  border: none;
+  padding: 13px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0f6338;
+}
+
+.food-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid #ddd;
+  padding: 12px 0;
+}
+
+#clearDay {
+  background: #d33d3d;
+  margin-top: 15px;
+}
+
+@media (max-width: 600px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+}

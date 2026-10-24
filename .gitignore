@@ -1,0 +1,5 @@
+node_modules/
+.env
+calories.db
+calories.db-shm
+calories.db-wal

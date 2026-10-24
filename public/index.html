@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>My Daily Calorie Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>🥗 Daily Calorie Tracker</h1>
+    <p>Track what you eat every day</p>
+  </header>
+
+  <main>
+    <section class="dashboard">
+      <div class="card">
+        <h3>Daily Goal</h3>
+        <h2 id="goal">2000</h2>
+        <p>kcal</p>
+      </div>
+
+      <div class="card">
+        <h3>Calories Eaten</h3>
+        <h2 id="consumed">0</h2>
+        <p>kcal</p>
+      </div>
+
+      <div class="card">
+        <h3>Remaining</h3>
+        <h2 id="remaining">2000</h2>
+        <p>kcal</p>
+      </div>
+    </section>
+
+    <section class="food-section">
+      <h2>Add Your Food</h2>
+
+      <input type="text" id="searchFood"
+             placeholder="Search food name...">
+
+      <select id="foodCategory">
+        <option value="All">All Foods</option>
+        <option value="Veg">Vegetarian</option>
+        <option value="Non-Veg">Non-Vegetarian</option>
+        <option value="Fruit">Fruits</option>
+        <option value="Snack">Snacks</option>
+        <option value="Drink">Drinks</option>
+      </select>
+
+      <select id="foodList">
+        <option value="">Select Food</option>
+      </select>
+
+      <label for="quantity">Quantity in grams/ml</label>
+      <input type="number" id="quantity"
+             value="100" min="1">
+
+      <select id="mealType">
+        <option>Breakfast</option>
+        <option>Lunch</option>
+        <option>Dinner</option>
+        <option>Snacks</option>
+      </select>
+
+      <p>Calories: <strong id="calories">0</strong></p>
+
+      <button id="addFood">Add Food</button>
+    </section>
+
+    <section class="history-section">
+      <h2>Today's Food History</h2>
+      <div id="foodHistory"></div>
+      <button id="clearDay">Clear Today</button>
+    </section>
+  </main>
+</body>
+</html>
